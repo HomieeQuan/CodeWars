@@ -26,8 +26,105 @@ function sum (numbers) {
      
  };
 
-//  1
+// 1
+      function sum(numbers){
+        let sum = 0
+        for(let i = 0; i < numbers.length; i++){
+          if(typeof numbers[i] === 'number'){
+            sum += numbers[i];
+          }
+        }
+        return sum
+      }
 // 2
+      function sum(numbers){
+        let sum = 0
+        for(let i = 0; i < numbers.length; i++){
+          if(typeof numbers[i] === 'number'){
+            sum += numbers[i]
+          }
+        }
+        return sum
+      }
 // 3
+      function sum(numbers){
+        let sum = 0
+        for(let i = 0; i < numbers.length; i++){
+          if(typeof numbers[i] === 'number'){
+            sum += numbers[i]
+          }
+        }
+        return sum
+      }
 // 4
+      function sum(numbers){
+        let sum = 0
+        for(let i = 0; i < numbers.length; i++){
+          if(typeof numbers[i] === 'number'){
+            sum += numbers[i]
+          }
+        }
+        return numbers
+      }
 // 5
+      function sum(numbers){
+        let sum = 0
+        for(let i = 0; i < numbers.length; i++){
+          if(typeof numbers[i] === 'number'){
+            sum += numbers[i]
+          }
+        }
+        return sum
+      }
+// 6
+      function sum(numbers){
+        let sum = 0
+        for(let i = 0; i < numbers.length; i++){
+          if(typeof numbers[i] === 'number'){
+            sum += numbers[i]
+          }
+        }
+        return sum
+      }
+// 7
+      function sum(numbers){
+        let sum = 0
+        for(let i = 0; i < numbers.length; i++){
+          if(typeof numbers[i] === 'number'){
+           sum += numbers[i]
+        }
+      }
+      return sum
+    } 
+// 8
+    function sum(numbers){
+      let sum = 0
+      for(let i = 0; i < numbers.length; i++){
+        if(typeof numbers[i] === 'number'){
+          sum += numbers[i]
+        }
+      }
+      return sum
+    }
+// 9
+    function sum(numbers){
+      let sum = 0
+      for(let i = 0; i < numbers.length; i++){
+        if(typeof numbers[i] === 'number'){
+          sum += numbers[i]
+        }
+      }
+      return sum
+    }
+    
+// 10
+
+    function sum(numbers){
+      let sum = 0
+      for(let i = 0; i < numbers.length; i++){
+        if(typeof numbers[i] === 'number'){
+          sum += numbers[i]
+        }
+      }
+      return sum
+    }
