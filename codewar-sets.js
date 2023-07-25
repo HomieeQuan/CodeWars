@@ -330,28 +330,79 @@ console.log(alphabetArr(['z','a','e','f']))
 // Challenge 1: FizzBuzz
 // Write a function that takes a number as input and returns "Fizz" if the number is divisible by 3, "Buzz" if it is divisible by 5, "FizzBuzz" if it is divisible by both 3 and 5, or the number itself otherwise.
 /*
-P:
-R:
-E:
-P:
+P:number
+R: return 'fizz' if the number is divisible by 3 'buzz' if it is divisible by 5 and 'fizzBuzz' if it is divisible by 3 and 5
+E:1,2,Fizz,4,Buzz,Fizz
+P: return 'fizz' if the number is divisible by 3 'buzz' if it is divisible by 5 and 'fizzBuzz' if it is divisible by 3 and 5
 */
-
+function fizzBuzz(number) {
+  if (number % 3 === 0 && number % 5 === 0) {
+    return "FizzBuzz";
+  } else if (number % 3 === 0) {
+    return "Fizz";
+  } else if (number % 5 === 0) {
+    return "Buzz";
+  } else {
+    return number;
+  }
+}
 // Challenge 2: Factorial using Loop
 // Write a function that takes a number as input and returns its factorial using a loop instead of recursion.
 /*
-P:
-R:
-E:
-P:
+P: num
+R: return the factorial of num
+E: 3! returns 1*2*3 = 6
+P: 
+  declare a variable called fact = 1
+  loop i from 1 to num 
+    fact *= i
+  return fact 
+
 */
+/*
+i  i < num  num
+1  true      3
+2  true      3
+3  false     3
+*/
+
+/*
+i  i <= num  num
+1  true      3
+2  true      3
+3  true      3
+4  false     3
+*/
+function factorial(num) {
+  let fact = 1
+
+  for(let i = 1; i <= num; i++) {
+    fact *= i
+    console.log(i,fact)
+  }
+  return fact
+}
+console.log(factorial(10))
 // Challenge 3: Sum of Multiples
 // Write a function that takes a number as input and returns the sum of all the multiples of 3 or 5 below that number.
 /*
-P:
-R:
+P: num
+R: return the sum if multiples of 3 or 5
 E:
 P:
+    declare a variable 
 */
+function sumMulti(num) {
+  let sum = 0
+  for(let i = 1; i < num; i++){
+    if(i % 3 === 0 || i % 5 === 0) {
+      console.log(i)
+      sum += i
+    }
+  }
+  return sum
+}
+console.log(sumMulti(20))
 // Challenge 4: Count Characters in a String
 // Write a function that takes a string as input and returns an object with each character as a key and its count as the value. Use a loop instead of array methods.
 /*
