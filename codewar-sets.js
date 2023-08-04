@@ -406,11 +406,36 @@ console.log(sumMulti(20))
 // Challenge 4: Count Characters in a String
 // Write a function that takes a string as input and returns an object with each character as a key and its count as the value. Use a loop instead of array methods.
 /*
+P: string
+R: return object with each character as a key and its count as a value
+E:ab {a: 1, b: 1}, abab {a: 2, b: 2} 
 P:
-R:
-E:
-P:
+Declare charCount, assign it the value of an empty object
+For each index i in string 
+  Declare char = string[i]
+  if charCount does not have property char
+    create a property on charCount named for the value of char with the value of 1
+  else
+    add 1 to the property on charCount named for the value of char
+return charCount
 */
+function count(string) {
+  
+  let charCount = {}
+  
+  for(let i = 0; i < string.length; i++){
+  
+    const char = string[i]
+    
+    if(charCount[char] === undefined){
+      charCount[char] = 1
+    }else{
+      charCount[char] += 1
+    }
+   
+  }
+  return charCount;
+}
 
 // Challenge 5: Count Digits in a Number
 // Write a function that takes a number as input and returns the count of digits in that number using a loop.
